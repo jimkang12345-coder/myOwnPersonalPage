@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is a favicon: the small icon shown in the browser tab -->
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="images/profilePic.JPG">
+    <title>Jimin's Personal Page</title>
+    <style>
+        img {width: 10%; border-radius: 100%; float: left; margin-right: 10px;}
+        .intro {font-weight: bold; }
+        /* By adding clear: both to <main>, you're telling it: "Don't allow any floated elements to the left OR right of me—start fresh below all floats." */
+        main {clear: both; max-width: 100%; overflow-x: hidden;} /* the overflow-x: hidden prevents horizontal scrolling*/
+        .content {display: flex; align-items: flex-start; gap: 24px; flex-wrap: wrap; max-width: 100%; }
+        nav {flex: 1; min-width: 200px;}
+        aside {flex: 1; min-width: 200px;}
+        nav li {margin: 5px 0;}
+        .contact {font-weight: bold;}
+        address {display: inline; margin: 0;}
+        footer p {margin: 3px 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/profilePic.JPG" alt="Jimin in a Professional Pose">
+        <article>
+            <p class="intro">Introduction</p>
+            <p>Hi, I am Jimin Kang.</p>
+        </article>
+    </header>
+    <main>
+        <section class="content">
+            <nav>
+                <ol>
+                    <h1>About Me</h1>
+                    <li><a href="education.html">My Education</a></li>
+                    <li><a href="work_experience.html">My Work Experience</a></li>
+                    <li><a href="my_family.html">About My Family</a></li>
+                </ol>
+            </nav>
+
+            <aside>
+                <p>idk yet</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p class="contact">Contact</p>
+        <p>Email: jimkang12345@gmail.com</p>
+        <p>Kr Tel. +82 10 2665 6801</p>
+        <p>Sw Tel. +46 79 353 9565</p>
+        <p>Current Address: <i>Stockholm, Sweden</i>ff</p>
+    </footer>
+</body>
+</html>
