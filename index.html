@@ -6,51 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is a favicon: the small icon shown in the browser tab -->
     <link rel="icon" type="image/jpeg" sizes="32x32" href="images/profilePic.JPG">
+    <link rel="stylesheet" href="css/style.css">
     <title>Jimin's Personal Page</title>
     <style>
         img {width: 10%; border-radius: 100%; float: left; margin-right: 10px;}
-        .intro {font-weight: bold; }
         /* By adding clear: both to <main>, you're telling it: "Don't allow any floated elements to the left OR right of me—start fresh below all floats." */
-        main {clear: both; max-width: 100%; overflow-x: hidden;} /* the overflow-x: hidden prevents horizontal scrolling*/
-        .content {display: flex; align-items: flex-start; gap: 24px; flex-wrap: wrap; max-width: 100%; }
-        nav {flex: 1; min-width: 200px;}
-        aside {flex: 1; min-width: 200px;}
-        nav li {margin: 5px 0;}
-        .contact {font-weight: bold;}
+        header p {font-weight: normal; font-size: 22px; margin: 5px; color: black;}
+        .content {display: flex; margin-top: 30px; font-weight: bold; flex-wrap: wrap; }
+        .content h2 {flex-basis: 100%;}
+        nav {flex: 1;}
+        nav li {margin: 5px 0; font-size: 25px; }
         address {display: inline; margin: 0;}
-        footer p {margin: 3px 0;}
+        footer {margin-top: auto;}
+        footer p {margin: 5px;}
+        .facts {box-sizing: border-box; border: 5px solid rgb(187, 34, 34); width: 50%; display: block; padding: 10px; overflow: auto; clear: both; margin-top: 25px; }
+        .contact {font-weight: bold; }
+        .info{margin-top:25px; box-sizing: border-box; width: 300px; border: 3px solid black;}
+        .lists {font-size: 20px;}
     </style>
 </head>
 <body>
-    <header>
+    <header id="top">
         <img src="images/profilePic.JPG" alt="Jimin in a Professional Pose">
-        <article>
-            <p class="intro">Introduction</p>
-            <p>Hi, I am Jimin Kang.</p>
-        </article>
+            <h1>Hi, I am Jimin Kang!</h>
+            <p>I was born in 1998 November 2 in Gwangju, South Korea.</p>
+            <p>I am currently living in Stockholm, Sweden with my girlfriend, Elina, and our whippet puppy, Uno.</p>
     </header>
     <main>
         <section class="content">
+            <h2>About Me</h2>
             <nav>
                 <ol>
-                    <h1>About Me</h1>
                     <li><a href="education.html">My Education</a></li>
                     <li><a href="work_experience.html">My Work Experience</a></li>
                     <li><a href="my_family.html">About My Family</a></li>
                 </ol>
             </nav>
-
-            <aside>
-                <p>idk yet</p>
-            </aside>
         </section>
+        <aside class="facts">
+            <h2>Fun Facts About Me</h2>
+            <ul class="lists">
+                <li>I have lived in South Korea, Spain, the US, and Sweden.</li>
+                <li>I have my bachelors degrees in Spanish and International Studies, and my masters in Latin American Studies.</li>
+                <li>I started learning programming in 2026 February 2, while I was doing my fieldwork in Argentina!</li>
+            </ul>
+        </aside>
     </main>
-    <footer>
+    <footer class="info">
         <p class="contact">Contact</p>
         <p>Email: jimkang12345@gmail.com</p>
         <p>Kr Tel. +82 10 2665 6801</p>
         <p>Sw Tel. +46 79 353 9565</p>
-        <p>Current Address: <i>Stockholm, Sweden</i>ff</p>
+        <p>Current Address: <i>Stockholm, Sweden</i></p>
     </footer>
+    <a href="#top" class="backtotop">Back to Top</a>
 </body>
 </html>

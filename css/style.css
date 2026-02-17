@@ -1,0 +1,4 @@
+body {display: flex; flex-direction: column; overflow-x: hidden; overflow: auto; background-color: rgb(255, 246, 187);} /* the overflow-x: hidden prevents horizontal scrolling*/
+.backtotop {position: fixed; bottom: 20px; right: 20px; font-size: 30px;}
+h1 {color: rgb(0, 97, 26)}
+h2 {color: #511501}
